@@ -1,8 +1,10 @@
 import { Users, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FeatureCard } from '../components/mini/Featproj';
+import {motion} from "motion/react";
 
 const Home = () => {
+  const navigate=useNavigate();
   return (
     <div className="bg-gradient-to-b from-blue-100 to-white">
       <section className="py-20 text-center">
@@ -13,9 +15,9 @@ const Home = () => {
           <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
             Sarthi is a youth-led non-governmental organisation that strives to build a society where empowered and educated youth improve their and others' lives. We believe that awareness is the first step towards change.
           </p>
-          <Link to="/get-involved" className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300">
+          <button onClick={()=>navigate("/get-involved")} className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300">
             Get Involved <ArrowRight className="inline ml-2" />
-          </Link>
+          </button>
         </div>
       </section>
 

@@ -22,7 +22,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({ title, tagline ,imgsrc
         alt={title}
         className="aboslute w-full h-full"
       />
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-white group-hover:opacity-0">
+      <div className="absolute inset-0 flex flex-col justify-center items-center bg-black/40 text-white group-hover:opacity-0">
         <h3 className="text-2xl font-bold">{title}</h3>
       </div>
       <motion.div
