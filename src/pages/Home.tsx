@@ -1,7 +1,7 @@
 import { Users, ArrowRight } from 'lucide-react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FeatureCard } from '../components/mini/Featproj';
-import {motion} from "motion/react";
+import MissionComponent from '../components/OurMission';
 
 const Home = () => {
   const navigate=useNavigate();
@@ -39,6 +39,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <MissionComponent/>
       </section>
 
       <section className="py-20 bg-blue-50">
