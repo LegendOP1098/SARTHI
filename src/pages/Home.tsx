@@ -1,6 +1,6 @@
-import React from 'react';
 import { Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { FeatureCard } from '../components/mini/Featproj';
 
 const Home = () => {
   return (
@@ -43,27 +43,21 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-800">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project Abhivyakti" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2 text-blue-800">Project Abhivyakti</h3>
-                <p className="text-gray-600">Mental health awareness initiative for youth.</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project Buland" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2 text-blue-800">Project Buland</h3>
-                <p className="text-gray-600">Menstrual hygiene awareness campaign.</p>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Project Sushiksha" className="w-full h-48 object-cover" />
-              <div className="p-6">
-                <h3 className="text-2xl font-semibold mb-2 text-blue-800">Project Sushiksha</h3>
-                <p className="text-gray-600">Free weekend school for underprivileged children.</p>
-              </div>
-            </div>
+            <FeatureCard 
+              title="Project Abhivyakti" 
+              tagline="Mental health awareness initiative for youth." 
+              imgsrc="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            />
+            <FeatureCard 
+              title="Project Buland" 
+              tagline="Menstrual hygiene awareness campaign."
+              imgsrc="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"  
+            />
+            <FeatureCard 
+              title="Project Sushiksha" 
+              tagline="Free weekend school for underprivileged children."
+              imgsrc="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            />
           </div>
         </div>
       </section>
