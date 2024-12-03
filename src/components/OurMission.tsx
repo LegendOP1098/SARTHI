@@ -5,7 +5,7 @@ import { Facebook,Linkedin,Zap } from "lucide-react"
 
 const MissionComponent: React.FC = () => {
   return (
-    <div className="container mx-auto p-6 flex items-start justify-center space-y-6">
+    <div className="mx-auto p-6 flex items-start justify-center space-y-6">
       <div className="w-full max-w-md">
         <Lottie animationData={animationData} loop={true}/>
       </div>
