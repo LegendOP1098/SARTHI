@@ -55,7 +55,7 @@ const Home = () => {
             />
             <FeatureCard 
               title="Project Sushiksha" 
-              tagline="Free weekend school for underprivileged children."
+              tagline="Free school for underprivileged children."
               imgsrc="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             />
           </div>
