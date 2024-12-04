@@ -36,7 +36,7 @@ export const Achievements = () => {
   ];
 
   return (
-    <div className="my-6 mx-4 h-80">
+    <div className="my-6 mx-4 h-[340px]">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold text-center my-10 text-blue-800">Achievements</h1>
       </div>
@@ -44,12 +44,12 @@ export const Achievements = () => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md"
+            className="flex flex-col items-center"
           >
             <img
               src={item.isrc}
               alt={item.name}
-              className="w-12 h-12 mb-4"
+              className="w-28 h-28 mb-4"
             />
             <h2 className="text-2xl font-bold text-orange-600">
               <CountUp start={0} end={item.value} duration={2} suffix={item.suffix} />
