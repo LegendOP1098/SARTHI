@@ -1,26 +1,26 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Heart } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
+import mainlogo from "../assets/main-logo.png"
 
 const Header = () => {
+  const navigate=useNavigate();
+
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-md">
-      <div className="container mx-auto px-4 py-4 flex flex-wrap justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <Heart className="w-8 h-8 mr-2" />
-          <span className="text-2xl font-bold">Sarthi</span>
-        </Link>
-        <nav className="mt-4 w-full md:w-auto md:mt-0">
-          <ul className="flex flex-wrap justify-center md:space-x-6">
-            <li><Link to="/" className="hover:text-blue-200 py-2 px-3 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">Home</Link></li>
-            <li><Link to="/our-work" className="hover:text-blue-200 py-2 px-3 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">Our Work</Link></li>
-            <li><Link to="/about-us" className="hover:text-blue-200 py-2 px-3 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">About Us</Link></li>
-            <li><Link to="/our-team" className="hover:text-blue-200 py-2 px-3 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">Our Team</Link></li>
-            <li><Link to="/get-involved" className="hover:text-blue-200 py-2 px-3 rounded-full hover:bg-white hover:bg-opacity-20 transition duration-300">Get Involved</Link></li>
-          </ul>
-        </nav>
+    <div className="bg-gradient-to-t from-blue-200 to-blue-600 flex justify-between w-full h-50 items-center">
+      <div className="flex items-center mx-4">
+        <img src={mainlogo} alt="" />
+        <h1 className="text-5xl text-white">SARTHI</h1>
       </div>
-    </header>
+      <div className="px-2">
+        <ul className="flex items-center px-3 justify-around mx-4 h-20 rounded-2xl bg-gray-400 py-4 backdrop-filter backdrop-blur-sm sticky top-0 bg-opacity-20" >
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/")}>Home</li>
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/our-work")}>Our Work</li>
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/about-us")}>About Us</li>
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/our-team")}>Our Team</li>
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/get-involved")}>Get Involved</li>
+          <li className="text-xl px-2 cursor-pointer mx-1 inline-block py-3 border border-transparent rounded-2xl bg-opacity-10 bg-white backdrop-filter font-semibold hover:bg-opacity-20 text-white" onClick={()=>navigate("/in-news")}>In News</li>
+        </ul>
+      </div>
+    </div>
   );
 };
 

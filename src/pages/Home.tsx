@@ -8,9 +8,9 @@ import { Achievements } from '../components/achievements';
 const Home = () => {
   const navigate=useNavigate();
   return (
-    <div className="bg-gradient-to-b from-[#ffd700]-to-white overflow-x-hidden">
-      <section className="py-20 text-center">
-        <div className="container mx-auto px-4">
+    <div className="bg-white overflow-x-hidden">
+      <section className="py-20 text-center bg-blue-100 border-b-1 border-black">
+        <div className="mx-auto px-4">
           <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
           <h1 className="text-5xl font-bold mb-4 text-blue-800">Welcome to Sarthi</h1>
           <p className="text-2xl mb-8 text-blue-600">Empowering Youth, Transforming Lives</p>
