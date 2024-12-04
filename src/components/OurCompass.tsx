@@ -4,7 +4,7 @@ import animationData from "../assets/anim2.json";
 function OurCompass() {
   return (
     <div className="mx-auto p-6 w-lvw flex justify-around">
-      <div className="text-right w-2/3">
+      <div className="text-right w-1/2">
         <h1
           className="text-4xl font-bold text-gray-800 relative"
           data-shadow="Mission"
