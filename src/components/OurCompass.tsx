@@ -44,7 +44,7 @@ function OurCompass() {
         </button>
       </div> 
       <div className="w-1/2 max-w-md flex justify-center items-center">
-        <Lottie animationData={animationData} loop={true}/>
+        <Lottie className="h-[600px] -m-40" animationData={animationData} loop={true}/>
       </div>
     </div>
   );
