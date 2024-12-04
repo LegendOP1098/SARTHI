@@ -5,7 +5,7 @@ const Header = () => {
   const navigate=useNavigate();
 
   return (
-    <div className="bg-gradient-to-t from-blue-200 to-blue-600 flex justify-between w-full h-50 items-center">
+    <div className="absolute bg-gradient-to-t from-blue-200 to-blue-600 flex justify-between w-full h-50 items-center">
       <div className="flex items-center mx-4">
         <img src={mainlogo} alt="" />
         <h1 className="text-5xl text-white">SARTHI</h1>
