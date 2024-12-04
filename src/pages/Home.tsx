@@ -8,7 +8,7 @@ import { Achievements } from '../components/achievements';
 const Home = () => {
   const navigate=useNavigate();
   return (
-    <div className="bg-gradient-to-b from-[#ffd700] to-white overflow-x-hidden">
+    <div className="bg-gradient-to-b from-[#ffd700]-to-white overflow-x-hidden">
       <section className="py-20 text-center">
         <div className="container mx-auto px-4">
           <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
