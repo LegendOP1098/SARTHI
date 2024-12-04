@@ -8,7 +8,7 @@ import { Achievements } from '../components/achievements';
 const Home = () => {
   const navigate=useNavigate();
   return (
-    <div className="bg-gradient-to-b from-blue-100 to-white overflow-x-hidden">
+    <div className="bg-gradient-to-b from-[#ffd700] to-white overflow-x-hidden">
       <section className="py-20 text-center">
         <div className="container mx-auto px-4">
           <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
@@ -35,7 +35,7 @@ const Home = () => {
         <OurCompass/>
       </section>
 
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-white-50">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-800">Featured Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
