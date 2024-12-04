@@ -5,7 +5,7 @@ import { Facebook,Linkedin,Zap } from "lucide-react"
 
 const MissionComponent: React.FC = () => {
   return (
-    <div className="mx-auto p-6 w-lvw flex item justify-around">
+    <div className="mx-auto p-6 w-lvw flex justify-around">
       <div className="w-1/2 max-w-md flex justify-center items-center">
         <Lottie animationData={animationData} loop={true}/>
       </div>
@@ -21,7 +21,7 @@ const MissionComponent: React.FC = () => {
           <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Education</span>
         </h1>
         <div className="border-l-blue-500 border-l-2 px-10 bg-blue-100 rounded-lg">
-          <ul className="text-lg text-gray-700 mt-4 space-y-4 list-disc	">
+          <ul className="text-lg text-gray-700 mt-4 space-y-4 list-disc">
             <li>
               As per the Union Education Ministry,<b>15 crore</b> children are currently out of the school system in India.
             </li>
@@ -39,7 +39,7 @@ const MissionComponent: React.FC = () => {
           </ul>
         </div>
         <div className="py-2">Click below to contribute!</div>
-        <button className="button bg-blue-600 text-white px-6 py-2 mt-4 rounded-lg shadow-md hover:bg-blue-700">
+        <button className="button bg-blue-600 text-white px-6 py-2 rounded-lg shadow-md hover:bg-blue-700">
           Create a change
         </button>
 
