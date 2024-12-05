@@ -5,13 +5,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export default function App() {
+export default function Carousel() {
   return (
     <Swiper
       spaceBetween={40}
       centeredSlides={true}
       autoplay={{
-        delay: 7000,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       pagination={{

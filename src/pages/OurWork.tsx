@@ -1,11 +1,31 @@
 import React from 'react';
 import { Brain, Droplet, BookOpen, Heart, Target } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const OurWork = () => {
+  const navigate=useNavigate();
   const projects = [
-    { name: 'Project Abhivyakti', description: 'Mental health awareness initiative for youth.', icon: Brain, image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
-    { name: 'Project Buland', description: 'Menstrual hygiene awareness and education campaign.', icon: Droplet, image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
-    { name: 'Project Sushiksha', description: 'Free weekend school for underprivileged children.', icon: BookOpen, image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' },
+    { 
+      name: 'Project Abhivyakti', 
+      description: 'Mental health awareness initiative for youth.', 
+      icon: Brain, 
+      image: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80' ,
+      url:'/our-work/proj-abhivyakti'
+    },
+    { 
+      name: 'Project Buland',
+      description: 'Menstrual hygiene awareness and education campaign.', 
+      icon: Droplet, 
+      image: 'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      url:'/our-work/proj-buland'
+    },
+    { 
+      name: 'Project Sushiksha', 
+      description: 'Free weekend school for underprivileged children.',
+      icon: BookOpen,
+      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+      url: '/our-work/proj-sushiksha'
+    },
   ];
 
   return (
@@ -18,7 +38,12 @@ const OurWork = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
             {projects.map((project, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+              <div 
+                key={index} 
+                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+                //@ts-ignore
+                onClick={()=>navigate(project.url)}
+              >
                 <img src={project.image} alt={project.name} className="w-full h-64 object-cover" />
                 <div className="p-6">
                   <project.icon className="w-12 h-12 text-purple-600 mb-4" />
