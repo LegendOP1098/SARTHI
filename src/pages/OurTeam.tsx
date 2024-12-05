@@ -15,19 +15,25 @@ const OurTeam = () => {
     { job: "UX Designer", name: "Sklyah Lu", img: image4 },
     { job: "Developer", name: "Griff Richards", img: image5 },
     { job: "Developer", name: "Stan John", img: image6 },
+    { job: "Developer", name: "Stan John", img: image6 },
+    { job: "Developer", name: "Stan John", img: image6 },
+    { job: "Developer", name: "Stan John", img: image6 },
   ];
 
-  const members2 = [
-    { job: "Product Owner", name: "Bill Mahoney", img: image1 },
+  const dir1 = [
     { job: "Art Director", name: "Saba Cabrera", img: image2 },
    
   ];
-  const members3 = [
-    { job: "UX Designer", name: "Sklyah Lu", img: image4 },
-    { job: "Developer", name: "Griff Richards", img: image5 },
-    { job: "Developer", name: "Stan John", img: image6 },
+  const dir2 = [
+    { job: "Product Owner", name: "Bill Mahoney", img: image1 },
+    
+   
   ];
+ 
   return (
+    <div className="bg-white">
+    <section className="pt-60">
+    <div className="container mx-auto px-4">
     <div className="our-team-container">
       <div className="container">
         <div className="first-col-container">
@@ -47,17 +53,33 @@ const OurTeam = () => {
         </div>
 
         <div className="img-container">
-          {members.map((member, index) => (
+          {dir1.map((member, index) => (
             <div key={index} className="member">
-              <div className="member-img">
+              <div className="member-img ">
                 <p className="member-job">{member.job}</p>
                 <img src={member.img} alt={member.name} />
               </div>
               <p className="member-name">{member.name}</p>
+              
             </div>
+            
           ))}
-          {members2.map((member, index) => (
-            <div key={index+5} className="member">
+       
+          <div className="member">
+            </div>
+            {dir2.map((member, index) => (
+            <div key={index} className="member">
+              <div className="member-img ">
+                <p className="member-job">{member.job}</p>
+                <img src={member.img} alt={member.name} />
+              </div>
+              <p className="member-name">{member.name}</p>
+              
+            </div>
+            
+          ))}
+          {members.map((member, index) => (
+            <div key={index} className="member">
               <center>
               <div className="member-img">
                 <p className="member-job">{member.job}</p>
@@ -67,11 +89,35 @@ const OurTeam = () => {
               </center>
             </div>
           ))}
-          
+          {dir1.map((member, index) => (
+            <div key={index} className="member">
+              <div className="member-img ">
+                <p className="member-job">{member.job}</p>
+                <img src={member.img} alt={member.name} />
+              </div>
+              <p className="member-name">{member.name}</p>
+              
+            </div>
+            
+          ))}
+       
+          <div className="member">
+            </div>
+            {dir2.map((member, index) => (
+            <div key={index} className="member">
+              <div className="member-img ">
+                <p className="member-job">{member.job}</p>
+                <img src={member.img} alt={member.name} />
+              </div>
+              <p className="member-name">{member.name}</p>
+              
+            </div>
+            ))}
+            
           
         </div>
         {/* Join Our Team Section */}
-        <div className="mt-20">
+        <div className="mt-20 my-20">
           <h2 className="text-4xl font-bold text-center mb-8">Join Our Team</h2>
           <p className="text-xl text-center mb-8 max-w-3xl mx-auto">
             We're always looking for passionate individuals to join our mission. If
@@ -90,6 +136,9 @@ const OurTeam = () => {
       
       </div>
       
+    </div>
+    </div>
+    </section>
     </div>
   );
 };
