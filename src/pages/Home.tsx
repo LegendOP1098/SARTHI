@@ -4,22 +4,32 @@ import { FeatureCard } from '../components/mini/Featproj';
 import MissionComponent from '../components/OurMission';
 import OurCompass from '../components/OurCompass';
 import { Achievements } from '../components/achievements';
+import Carousel from '../components/mini/Carousel';
 
 const Home = () => {
   const navigate=useNavigate();
   return (
-    <div className="bg-gradient-to-b from-[#ffd700]-to-white overflow-x-hidden">
-      <section className="py-20 text-center">
-        <div className="container mx-auto px-4">
-          <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
-          <h1 className="text-5xl font-bold mb-4 text-blue-800">Welcome to Sarthi</h1>
-          <p className="text-2xl mb-8 text-blue-600">Empowering Youth, Transforming Lives</p>
-          <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
-            Sarthi is a youth-led non-governmental organisation that strives to build a society where empowered and educated youth improve their and others' lives. We believe that awareness is the first step towards change.
-          </p>
-          <button onClick={()=>navigate("/get-involved")} className="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300">
-            Get Involved <ArrowRight className="inline ml-2" />
-          </button>
+    <div className="bg-white overflow-x-hidden">
+      <section className="py-20 text-center bg-blue-100 border-b-1 border-black h-screen">
+        <div className="flex justify-around items-center mx-auto px-4 h-full pt-20">
+          <div>
+            <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
+            <h1 className="text-5xl font-bold mb-4 text-blue-800">Welcome to Sarthi</h1>
+            <p className="text-2xl mb-8 text-blue-600">Empowering Youth, Transforming Lives</p>
+            <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
+              Sarthi is a youth-led non-governmental organisation that strives to build a society where empowered and educated youth improve their and others' lives. We believe that awareness is the first step towards change.
+            </p>
+            <button 
+              onClick={()=>navigate("/get-involved")} 
+              className="m-auto w-60 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300"
+            >
+              Get Involved <ArrowRight className="inline ml-2" />
+            </button>
+          </div>
+          
+          <div className="h-5/6 w-1/2 bg-white rounded-lg">
+            <Carousel/>
+          </div>
         </div>
       </section>
 

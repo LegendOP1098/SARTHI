@@ -1,4 +1,3 @@
-// import React from "react";
 import CountUp from "react-countup";
 
 export const Achievements = () => {
@@ -52,7 +51,7 @@ export const Achievements = () => {
               className="w-28 h-28 mb-4"
             />
             <h2 className="text-2xl font-bold text-orange-600">
-              <CountUp start={0} end={item.value} duration={2} suffix={item.suffix} />
+              <CountUp start={0} end={item.value} duration={3} suffix={item.suffix} />
             </h2>
             <p className="text-gray-700">{item.name}</p>
           </div>

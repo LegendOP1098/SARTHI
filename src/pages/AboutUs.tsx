@@ -9,8 +9,8 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-green-100 to-white">
-      <section className="py-20">
+    <div className="bg-white">
+      <section className="py-60">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold text-center mb-12 text-green-800">About Us</h1>
           <div className="max-w-3xl mx-auto">
