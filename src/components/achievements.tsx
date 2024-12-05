@@ -2,12 +2,6 @@ import React from "react";
 import NumberCount from "./NumberCounter"; // Assuming NumberCount is now a TSX component
 import './Achievements.css';
 
-interface AchievementProps {
-  value: number;
-  suffix: string;
-  label: string;
-  icon: string;
-}
 
 const Achievements: React.FC = () => {
   return (
