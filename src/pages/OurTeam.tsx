@@ -17,6 +17,16 @@ const OurTeam = () => {
     { job: "Developer", name: "Stan John", img: image6 },
   ];
 
+  const members2 = [
+    { job: "Product Owner", name: "Bill Mahoney", img: image1 },
+    { job: "Art Director", name: "Saba Cabrera", img: image2 },
+   
+  ];
+  const members3 = [
+    { job: "UX Designer", name: "Sklyah Lu", img: image4 },
+    { job: "Developer", name: "Griff Richards", img: image5 },
+    { job: "Developer", name: "Stan John", img: image6 },
+  ];
   return (
     <div className="our-team-container">
       <div className="container">
@@ -46,6 +56,19 @@ const OurTeam = () => {
               <p className="member-name">{member.name}</p>
             </div>
           ))}
+          {members2.map((member, index) => (
+            <div key={index+5} className="member">
+              <center>
+              <div className="member-img">
+                <p className="member-job">{member.job}</p>
+                <img src={member.img} alt={member.name} />
+              </div>
+              <p className="member-name">{member.name}</p>
+              </center>
+            </div>
+          ))}
+          
+          
         </div>
         {/* Join Our Team Section */}
         <div className="mt-20">
