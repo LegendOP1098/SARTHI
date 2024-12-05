@@ -11,8 +11,8 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-yellow-100 to-white">
-      <section className="py-20">
+    <div className="bg-white">
+      <section className="pt-60">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold text-center mb-12 text-yellow-800">Our Team</h1>
           <p className="text-xl text-center mb-16 max-w-3xl mx-auto text-gray-700">

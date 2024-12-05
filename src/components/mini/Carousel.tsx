@@ -22,16 +22,16 @@ export default function App() {
       className="mySwiper"
     >
       <SwiperSlide>
-        <img src={img1} alt="" />
+        <img className='rounded-lg' src={img1} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={img1} alt="" />
+        <img className='rounded-lg' src={img1} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={img1} alt="" />
+        <img className='rounded-lg' src={img1} alt="" />
       </SwiperSlide>
       <SwiperSlide>
-        <img src={img1} alt="" />
+        <img className='rounded-lg'src={img1} alt="" />
       </SwiperSlide>
     </Swiper>
   );

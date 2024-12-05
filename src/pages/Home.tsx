@@ -27,7 +27,7 @@ const Home = () => {
             </button>
           </div>
           
-          <div className="h-5/6 w-1/2 bg-white">
+          <div className="h-5/6 w-1/2 bg-white rounded-lg">
             <Carousel/>
           </div>
         </div>
