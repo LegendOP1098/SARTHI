@@ -1,6 +1,11 @@
 import Carousel from "../components/mini/Carousel"
 
-export const ProjectPage = ({title,info}) => {
+interface ProjectPageProps {
+  title: string;
+  info: string;
+}
+
+export const ProjectPage: React.FC<ProjectPageProps> = ({title,info}) => {
   return (
     <div className="flex justify-center items-center h-lvh w-full flex-col overflow-y-hidden">
       <div>
