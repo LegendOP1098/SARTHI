@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FeatureCard } from '../components/mini/Featproj';
 import MissionComponent from '../components/OurMission';
 import OurCompass from '../components/OurCompass';
-import { Achievements } from '../components/achievements';
+import { Achievements } from '../components/achievementsold';
 import Carousel from '../components/mini/Carousel';
 
 const Home = () => {
