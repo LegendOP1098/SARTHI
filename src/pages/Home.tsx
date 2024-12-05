@@ -10,7 +10,7 @@ const Home = () => {
   const navigate=useNavigate();
   return (
     <div className="bg-white overflow-x-hidden">
-      <section className="py-20 text-center bg-blue-100 border-b-1 border-black h-screen">
+      <section className="py-20 text-center border-b-1 border-black h-screen">
         <div className="flex justify-around items-center mx-auto px-4 h-full pt-20">
           <div>
             <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
