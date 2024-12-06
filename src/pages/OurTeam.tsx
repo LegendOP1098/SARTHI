@@ -9,8 +9,6 @@ import image6 from "../assets/photo6.png";
 
 const OurTeam = () => {
   const members = [
-    { job: "Director", name: "Ananya Banerjee", img: image1 },
-    { job: "Director", name: "Sanjoli Banerjee", img: image2 },
     { job: "Manager", name: "Vasudev Singh", img: image3 },
     { job: "Manager", name: "Ananya Sachdeva", img: image4 },
     { job: "Chief Advisor", name: "Gagan Banerjee", img: image5 },
@@ -18,36 +16,39 @@ const OurTeam = () => {
     { job: "Tech Head", name: "Vishal", img: image6 },
     { job: "National Project Head- Abhivyakti", name: "Gargi Vashishta", img: image6 },
     { job: "Sushishka Delhi Head", name: "Kamya Verma", img: image6 },
+    { job: "ABAB", name: "idk", img: image1 },
+    { job: "XOXO", name: "why", img: image2 }
   ];
 
   const dir1 = [
-    { job: "Art Director", name: "Saba Cabrera", img: image2 },
+    { job: "Director", name: "Ananya Banerjee", img: image2 },
    
   ];
   const dir2 = [
-    { job: "Product Owner", name: "Bill Mahoney", img: image1 },
+    { job: "Director", name: "Sanjoli Banerjee", img: image1 },
     
    
   ];
  
   return (
-    <div className="bg-white">
-    <section className="pt-60">
+  <div className="bg-white">
+  <section className="pt-60">
     <div className="container mx-auto px-4">
-    <div className="our-team-container">
-      <div className="container">
-        <div className="first-col-container">
-          <div className="left-header">
-            <h1>The Creative Crew</h1>
-          </div>
-          <div className="right-header">
-            <div className="header-col">
-              <h3>Who We Are</h3>
+      <div className="our-team-container text-center"> {/* Add `text-center` class */}
+        <div className="container">
+          <div className="first-col-container">
+            <div className="left-header">
+              <h1>MEET THE TEAM</h1>
             </div>
-            <div className="text-col">
+            <div className="right-header">
+              <div className="header-col">
+                <h3>Who We Are</h3>
+              </div>
+              <div className="text-col">
+
               <p>
-                We are a team of creatively diverse, driven, and innovative individuals working in various locations around the world.
-              </p>
+                {/* We are a team of creatively diverse, driven, and innovative individuals working in various locations around the world.
+             */} </p>
             </div>
           </div>
         </div>
@@ -144,3 +145,23 @@ const OurTeam = () => {
 };
 
 export default OurTeam;
+
+
+
+
+
+
+{/* <div className="bg-white">
+<section className="pt-60">
+<div className="container mx-auto px-4">
+<div className="our-team-container">
+  <div className="container">
+    <div className="first-col-container">
+      <div className="left-header">
+        <h1>The Creative Crew</h1>
+      </div>
+      <div className="right-header">
+        <div className="header-col">
+          <h3>Who We Are</h3>
+        </div>
+        <div className="text-col"> */}

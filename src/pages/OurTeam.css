@@ -1,23 +1,28 @@
-/* Scoped to the OurTeam component */
+
+/*Scoped to the OurTeam component*/
+
 .our-team-container {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   
-  }
-  
-  .our-team-container .container {
-    width: 1000px;
-    margin: auto;
-    min-height: 100%;
-    
-  }
-  
-  .our-team-container .first-col-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  padding: 0px; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%; 
+}
+
+.our-team-container .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  min-height: 10%;
+}
+
+.our-team-container .first-col-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
   
   .our-team-container .right-header {
     width: 50%;
@@ -28,8 +33,8 @@
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 42px;
-    letter-spacing: -0.045em;
+    line-height: 62px;
+    letter-spacing: 0.045em;
   }
   
   .our-team-container .header-col h3 {
@@ -165,4 +170,7 @@
       margin-top: 10px;
     }
   }
-  
+
+
+
+
