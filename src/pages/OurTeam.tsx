@@ -9,15 +9,15 @@ import image6 from "../assets/photo6.png";
 
 const OurTeam = () => {
   const members = [
-    { job: "Product Owner", name: "Bill Mahoney", img: image1 },
-    { job: "Art Director", name: "Saba Cabrera", img: image2 },
-    { job: "Tech Lead", name: "Shae Le", img: image3 },
-    { job: "UX Designer", name: "Sklyah Lu", img: image4 },
-    { job: "Developer", name: "Griff Richards", img: image5 },
-    { job: "Developer", name: "Stan John", img: image6 },
-    { job: "Developer", name: "Stan John", img: image6 },
-    { job: "Developer", name: "Stan John", img: image6 },
-    { job: "Developer", name: "Stan John", img: image6 },
+    { job: "Director", name: "Ananya Banerjee", img: image1 },
+    { job: "Director", name: "Sanjoli Banerjee", img: image2 },
+    { job: "Manager", name: "Vasudev Singh", img: image3 },
+    { job: "Manager", name: "Ananya Sachdeva", img: image4 },
+    { job: "Chief Advisor", name: "Gagan Banerjee", img: image5 },
+    { job: "Tech Head", name: "Vaibhav Gupta", img: image6 },
+    { job: "Tech Head", name: "Vishal", img: image6 },
+    { job: "National Project Head- Abhivyakti", name: "Gargi Vashishta", img: image6 },
+    { job: "Sushishka Delhi Head", name: "Kamya Verma", img: image6 },
   ];
 
   const dir1 = [
