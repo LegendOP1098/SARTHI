@@ -1,4 +1,6 @@
+import React from "react";
 import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 
 export const Achievements = () => {
   const data = [
@@ -34,24 +36,37 @@ export const Achievements = () => {
     },
   ];
 
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.5, 
+  });
+
   return (
-    <div className="my-6 mx-4 h-[340px]">
+    <div ref={ref} className="my-6 mx-4 h-[340px]">
       <div className="flex justify-center">
-        <h1 className="text-4xl font-bold text-center my-10 text-blue-800">Achievements</h1>
+        <h1 className="text-4xl font-bold text-center my-10 text-blue-800">
+          Achievements
+        </h1>
       </div>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
         {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center"
-          >
+          <div key={index} className="flex flex-col items-center">
             <img
               src={item.isrc}
               alt={item.name}
               className="w-28 h-28 mb-4"
             />
             <h2 className="text-2xl font-bold text-orange-600">
-              <CountUp start={0} end={item.value} duration={3} suffix={item.suffix} />
+              {inView ? (
+                <CountUp
+                  start={0}
+                  end={item.value}
+                  duration={3}
+                  suffix={item.suffix}
+                />
+              ) : (
+                "0"
+              )}
             </h2>
             <p className="text-gray-700">{item.name}</p>
           </div>

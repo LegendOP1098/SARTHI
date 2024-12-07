@@ -22,14 +22,14 @@ const AboutUs = () => {
           </div>
           <div className="sm:w-1/2 p-5">
             <div className="text">
-              <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">About Us</span>
+              <span className="text-gray-500 text-4xl border-b-2 hover:border-b-4 border-indigo-600 uppercase">About Us</span>
               <h2 className="my-4 font-bold text-3xl sm:text-4xl">
                 About <span className="text-indigo-600">Sarthi</span>
               </h2>
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-lg">
                 Sarthi is a youth-led non-governmental organisation dedicated to empowering youth through education, awareness, and action. We believe in the potential of young people to create positive change in their communities and beyond.
               </p>
-              <p className="text-gray-700 mt-4">
+              <p className="text-gray-700 mt-4 text-lg">
                 Founded in 2014, Sarthi has grown from a small group of passionate volunteers to a dynamic organization making a significant impact across multiple communities. Our approach combines grassroots activism with innovative programs to address the most pressing issues facing youth today.
               </p>
             </div>
