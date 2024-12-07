@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      clipPath: {
+        'custom': 'polygon(1% 0, 100% 0, 100% 75%, 47% 100%, 0 75%)',
+      },
       animation: {
         border: 'border 4s ease infinite',
       },

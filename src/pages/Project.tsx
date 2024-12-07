@@ -8,7 +8,7 @@ interface ProjectPageProps {
 export const ProjectPage: React.FC<ProjectPageProps> = ({title,info}) => {
   return (
     <div className="flex justify-center items-center h-lvh w-full flex-col overflow-y-hidden">
-      <div>
+      <div className="mb-10">
         <h1 className="font-bold text-5xl text-black uppercase">{title}</h1>
       </div>
       <div className="flex w-full p-10 justify-around">

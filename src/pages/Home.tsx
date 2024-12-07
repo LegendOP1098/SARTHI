@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FeatureCard } from '../components/mini/Featproj';
 import MissionComponent from '../components/OurMission';
 import OurCompass from '../components/OurCompass';
-import { Achievements } from '../components/achievementsold';
+import { Achievements } from '../components/Achievements_home';
 import Carousel from '../components/mini/Carousel';
 
 const Home = () => {
@@ -32,16 +32,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
       <section className="bg-white">
         <Achievements/>
       </section>
 
-      <section>
+      <section className='mt-20'>
         <MissionComponent/>
       </section>
 
-      <section>
+      <section className='my-20'>
         <OurCompass/>
       </section>
 

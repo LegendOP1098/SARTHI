@@ -1,6 +1,6 @@
 import React from 'react';
 import { Target, Heart, BookOpen } from 'lucide-react';
-import Achievements from '../components/Achievements';
+import Achievements from '../components/Achievements_about';
 import image6 from "../assets/photo6.png";
 
 const AboutUs = () => {
@@ -46,12 +46,10 @@ const AboutUs = () => {
           </p>
         </div>
       </section>
-      {/* New Section */}
+
       <section className="py-0">
-        
         <Achievements />
-     
-     </section>
+      </section>
 
 
       {/* Core Focus Areas Section */}
