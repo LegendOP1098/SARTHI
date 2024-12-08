@@ -10,7 +10,7 @@ const GetInvolved = () => {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="bg-gradient-to-b from-red-100 to-yellow">
       <section className="pt-60">
         <div className="container mx-auto px-4">
           <h1 className="text-5xl font-bold text-center mb-12 text-red-800">Get Involved</h1>

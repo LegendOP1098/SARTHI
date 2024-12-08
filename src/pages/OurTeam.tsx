@@ -5,6 +5,8 @@ import image3 from "../assets/photo3.png";
 import image4 from "../assets/photo4.png";
 import image5 from "../assets/photo5.png";
 import image6 from "../assets/photo6.png";
+import image7 from "../assets/AnanyaB.avif";
+import image8 from "../assets/SanjoliB.avif";
 
 const OurTeam = () => {
   const members = [
@@ -15,13 +17,13 @@ const OurTeam = () => {
     { job: "Tech Head", name: "Vishal", img: image6 },
     { job: "Project Head", name: "Gargi Vashishta", img: image6 },
     { job: "Delhi Head", name: "Kamya Verma", img: image6 },
-    { job: "ABAB", name: "idk", img: image1 },
-    { job: "XOXO", name: "why", img: image2 },
+    { job: "POR", name: "idk", img: image1 },
+    { job: "POR", name: "why", img: image2 },
   ];
 
   const directors = [
-    { job: "Director", name: "Ananya Banerjee", img: image2 },
-    { job: "Director", name: "Sanjoli Banerjee", img: image1 },
+    { job: "Director", name: "Ananya Banerjee", img: image7 },
+    { job: "Director", name: "Sanjoli Banerjee", img: image8 },
   ];
 
   return (
