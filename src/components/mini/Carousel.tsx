@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from "../../assets/MainBefore.jpg" ;
+import img1 from "../../assets/sarthi1.webp" ;
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
