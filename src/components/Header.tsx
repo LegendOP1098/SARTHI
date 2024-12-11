@@ -14,12 +14,12 @@ const Header = () => {
       <div className="px-2">
         <ul className="flex items-center px-3 justify-around mx-4 h-20 rounded-2xl py-4">
           {[
-            { label: "Home", path: "/" },
-            { label: "Our Work", path: "/our-work" },
-            { label: "About Us", path: "/about-us" },
-            { label: "Our Team", path: "/our-team" },
-            { label: "Get Involved", path: "/get-involved" },
-            { label: "In News", path: "/in-news" },
+            {label: "Home", path: "/" },
+            {label: "Our Work", path: "/our-work" },
+            {label: "About Us", path: "/about-us" },
+            {label: "Our Team", path: "/our-team" },
+            {label: "Get Involved", path: "/get-involved" },
+            {label: "In News", path: "/in-news" },
           ].map((item) => (
             <li
               key={item.label}
