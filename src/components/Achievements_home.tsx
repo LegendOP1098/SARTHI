@@ -56,7 +56,7 @@ export const Achievements = () => {
               alt={item.name}
               className="w-28 h-28 mb-4"
             />
-            <h2 className="text-2xl font-bold text-orange-600">
+            <h2 className="text-5xl font-bold text-orange-600">
               {inView ? (
                 <CountUp
                   start={0}

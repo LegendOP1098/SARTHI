@@ -38,9 +38,9 @@ const AboutUs = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-green-800">Our Mission</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-[#11304c]">Our Mission</h2>
           <p className="text-2xl text-center max-w-3xl mx-auto text-gray-700">
             To empower youth through education, awareness, and action, creating a society where every young person has the opportunity to reach their full potential and contribute positively to their community.
           </p>
@@ -55,12 +55,12 @@ const AboutUs = () => {
       {/* Core Focus Areas Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-green-800">Our Core Focus Areas</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-[#11304c]">Our Core Focus Areas</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {focusAreas.map((area, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center">
-                <area.icon className="w-16 h-16 text-green-600 mx-auto mb-6" />
-                <h3 className="text-2xl font-semibold mb-4 text-green-800">{area.name}</h3>
+                <area.icon className="w-16 h-16 text-[#11304c] mx-auto mb-6" />
+                <h3 className="text-2xl font-semibold mb-4 text-[#11304c]">{area.name}</h3>
                 <p className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             ))}
@@ -70,24 +70,24 @@ const AboutUs = () => {
      
 
       {/* Values Section */}
-      <section className="py-20 bg-green-50">
+      <section className="py-20 bg-blue-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-green-800">Our Values</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-[#11304c]">Our Values</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-2 text-green-800">Integrity</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Integrity</h3>
               <p className="text-gray-600">We act with honesty and transparency in all our endeavors.</p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-2 text-green-800">Innovation</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Innovation</h3>
               <p className="text-gray-600">We embrace creative solutions to address complex challenges.</p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-2 text-green-800">Collaboration</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Collaboration</h3>
               <p className="text-gray-600">We believe in the power of partnerships and teamwork.</p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-2 text-green-800">Empathy</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Empathy</h3>
               <p className="text-gray-600">We approach our work with compassion and understanding.</p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const AboutUs = () => {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h2 className="my-6 text-2xl tracking-tight font-extrabold text-green-800 sm:text-3xl md:text-4xl">
+              <h2 className="my-6 text-2xl tracking-tight font-extrabold text-[#11304c] sm:text-3xl md:text-4xl">
                 About Us
               </h2>
 

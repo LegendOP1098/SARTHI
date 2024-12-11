@@ -29,11 +29,11 @@ const OurWork = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-purple-100 to-white">
+    <div className="bg-gradient-to-b from-[#8bbde8] to-white">
       <section className="pt-48">
         <div className="container mx-auto px-4">
-          <h1 className="group text-purple-800 transition-all font-bold mb-12 text-center text-5xl duration-300 ease-in-out" >
-            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-purple-800 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <h1 className="group text-[#11304c] transition-all font-bold mb-12 text-center text-5xl duration-300 ease-in-out" >
+            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-[#11304c] group-hover:bg-[length:0%_2px] bg-no-repeat bg-[length:100%_2px] transition-all duration-500 ease-out">
               Our Work
             </span>
           </h1>
@@ -49,8 +49,8 @@ const OurWork = () => {
               >
                 <img src={project.image} alt={project.name} className="w-full h-64 object-cover" />
                 <div className="p-6">
-                  <project.icon className="w-12 h-12 text-purple-600 mb-4" />
-                  <h3 className="text-2xl font-semibold mb-2 text-purple-800">{project.name}</h3>
+                  <project.icon className="w-12 h-12 text-[#205c91] mb-4" />
+                  <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">{project.name}</h3>
                   <p className="text-gray-600">{project.description}</p>
                 </div>
               </div>
@@ -61,25 +61,25 @@ const OurWork = () => {
 
       <section className="py-20 bg-white">
         <div className="mx-auto px-4">
-          <h1 className="group text-purple-800 transition-all font-bold mb-12 text-center text-4xl duration-300 ease-in-out" >
-            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-purple-800 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+          <h1 className="group text-[#11304c] transition-all font-bold mb-12 text-center text-4xl duration-300 ease-in-out" >
+            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-[#11304c] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
               Our Impact Area
             </span>
           </h1>
           <div className="flex flex-wrap mx-60 justify-around gap-8">
-            <div className="text-center w-64 border-2 rounded-2xl border-purple-600 p-10 hover:scale-105 transition duration-300">
-              <Heart className="w-16 h-16 mx-auto mb-4 text-purple-600" />
-              <h3 className="text-2xl font-semibold mb-2 text-purple-800">Health</h3>
+            <div className="text-center w-64 border-2 rounded-2xl border-[#205c91] p-10 hover:scale-105 transition duration-300">
+              <Heart className="w-16 h-16 mx-auto mb-4 text-[#205c91]" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Health</h3>
               <p className="text-gray-600">Promoting physical and mental well-being among youth.</p>
             </div>
-            <div className="text-center w-64 border-2 rounded-2xl border-purple-600 p-10 hover:scale-105 transition duration-300">
-              <BookOpen className="w-16 h-16 mx-auto mb-4 text-purple-600" />
-              <h3 className="text-2xl font-semibold mb-2 text-purple-800">Education</h3>
+            <div className="text-center w-64 border-2 rounded-2xl border-[#205c91] p-10 hover:scale-105 transition duration-300">
+              <BookOpen className="w-16 h-16 mx-auto mb-4 text-[#205c91]" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Education</h3>
               <p className="text-gray-600">Providing quality education and learning opportunities.</p>
             </div>
-            <div className="text-center w-64 border-2 rounded-2xl border-purple-600  p-10 hover:scale-105 transition duration-300">
-              <Target className="w-16 h-16 mx-auto mb-4 text-purple-600" />
-              <h3 className="text-2xl font-semibold mb-2 text-purple-800">Empowerment</h3>
+            <div className="text-center w-64 border-2 rounded-2xl border-[#205c91]  p-10 hover:scale-105 transition duration-300">
+              <Target className="w-16 h-16 mx-auto mb-4 text-[#205c91]" />
+              <h3 className="text-2xl font-semibold mb-2 text-[#11304c]">Empowerment</h3>
               <p className="text-gray-600">Empowering youth to become agents of change.</p>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { Users, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { FeatureCard } from '../components/mini/Featproj';
 import MissionComponent from '../components/OurMission';
@@ -15,7 +15,6 @@ const Home = () => {
         <section className="py-20 text-center border-b-1 border-black h-screen">
           <div className="flex justify-around items-center mx-auto px-4 h-full pt-20">
             <div>
-              <Users className="w-20 h-20 mx-auto mb-6 text-blue-600" />
               <h1 className="text-5xl font-bold mb-4 text-blue-800">Welcome to Sarthi</h1>
               <p className="text-2xl mb-8 text-blue-600">Empowering Youth, Transforming Lives</p>
               <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
@@ -51,8 +50,8 @@ const Home = () => {
       <section className="py-20 bg-white-50">
         <div className="container mx-auto px-4">
           <h2 className="group text-blue-800 transition-all font-bold mb-12 text-center text-4xl duration-300 ease-in-out" >
-            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-blue-800 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
-            Featured Projects
+            <span className="bg-left-bottom bg-gradient-to-r from-blue-100 to-blue-800 group-hover:bg-[length:0%_2px] bg-no-repeat bg-[length:100%_2px] transition-all duration-500 ease-out">
+              Featured Projects
             </span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

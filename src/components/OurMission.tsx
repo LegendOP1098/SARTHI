@@ -1,7 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
 import animationData from "../assets/anim1.json";
-import { Facebook,Linkedin,Zap } from "lucide-react"
 
 const MissionComponent: React.FC = () => {
   return (
@@ -43,26 +42,6 @@ const MissionComponent: React.FC = () => {
           Create a change
         </button>
 
-        <div className="social-links flex items-center mt-6 space-x-4">
-          <a
-            href="#"
-            className="text-gray-600 hover:text-blue-600 text-xl transition"
-          >
-            <Facebook/>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 hover:text-blue-600 text-xl transition"
-          >
-            <Linkedin/>
-          </a>
-          <a
-            href="#"
-            className="text-gray-600 hover:text-green-600 text-xl transition"
-          >
-            <Zap/>
-          </a>
-        </div>
 
         {/* Footer */}
         <p className="footer text-sm text-gray-500 mt-2">
