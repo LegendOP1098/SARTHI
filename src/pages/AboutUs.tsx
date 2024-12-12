@@ -22,7 +22,7 @@ const AboutUs = () => {
           </div>
           <div className="sm:w-1/2 p-5">
             <div className="text">
-              <span className="text-gray-500 text-4xl border-b-2 hover:border-b-4 border-indigo-600 uppercase">About Us</span>
+              {/* <span className="text-gray-500 text-4xl border-b-2 hover:border-b-4 border-indigo-600 uppercase">About Us</span> */}
               <h2 className="my-4 font-bold text-3xl sm:text-4xl">
                 About <span className="text-indigo-600">Sarthi</span>
               </h2>
@@ -47,15 +47,15 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="py-0">
+      {/* <section className="py-0">
         <Achievements />
-      </section>
+      </section> */}
 
 
       {/* Core Focus Areas Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12 text-[#11304c]">Our Core Focus Areas</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-[#11304c]">Our Focus Areas</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {focusAreas.map((area, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-8 text-center">
@@ -94,7 +94,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section>
+      {/* <section>
       <div id="about" className="relative bg-white overflow-hidden mt-16">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -134,7 +134,7 @@ const AboutUs = () => {
         />
       </div>
     </div>
-      </section>
+      </section> */}
     </div>
   );
 };

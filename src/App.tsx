@@ -18,7 +18,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/our-team" element={<OurTeam />} />
             <Route path="/get-involved" element={<GetInvolved />} />
-            <Route path="/in-news" element={<div className='pt-60' />} />
+            {/* <Route path="/in-news" element={<div className='pt-60' />} /> */}
             <Route path="/our-work/proj-abhivyakti" element={<ProjectPage title="Project Abhivyakti" info="loremfkjhjkgvbfjksdbjksdgb"/>} />
             <Route path="/our-work/proj-buland" element={<ProjectPage title="Project Buland" info="loremfkjhjkgvbfjksdbjksdgb"/>} />
             <Route path="/our-work/proj-sushiksha" element={<ProjectPage title="Project Sushiksha" info="loremfkjhjkgvbfjksdbjksdgb"/>} />
