@@ -4,37 +4,42 @@ import { FeatureCard } from '../components/mini/Featproj';
 import MissionComponent from '../components/OurMission';
 import OurCompass from '../components/OurCompass';
 import { Achievements } from '../components/Achievements_home';
-import Carousel from '../components/mini/Carousel';
+// import Carousel from '../components/mini/Carousel';
 import FadeInFromDown from '../components/mini/FadeEffect';
+import bg1 from "../assets/backgroung.mp4"
 
 const Home = () => {
   const navigate=useNavigate();
   return (
     <div className="bg-white overflow-x-hidden">
       <FadeInFromDown>
-        <section className="py-20 text-center border-b-1 border-black h-screen">
-          <div className="flex justify-around items-center mx-auto px-4 h-full pt-20">
-            <div>
-              <h1 className="text-5xl font-bold mb-4 text-blue-800">Welcome to Sarthi</h1>
-              <p className="text-2xl mb-8 text-blue-600">Empowering Youth, Transforming Lives</p>
-              <p className="text-lg max-w-2xl mx-auto mb-12 text-gray-700">
-                Sarthi is a youth-led non-governmental organisation that strives to build a society where empowered and educated youth improve their and others' lives. We believe that awareness is the first step towards change.
-              </p>
-              <button 
-                onClick={()=>navigate("/get-involved")} 
-                className="m-auto w-60 group transition duration-300 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700"
-              >
-                Get Involved <ArrowRight className="inline ml-2 hover:translate-x-1 transfrom transition-all duration-500 ease-in-out">Get Started</ArrowRight>
-              </button>
-            </div>
-            
-            <div className="h-5/6 w-1/2 bg-white rounded-lg">
-              <Carousel/>
-            </div>
+        <section className="relative h-screen flex items-center justify-center text-center text-white">
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            className="absolute inset-0 w-full h-full object-cover"
+            src={bg1}
+          /> 
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="relative z-10 px-6">
+            <h4 className="text-5xl font-bold mb-4">Welcome to Sarthi</h4>
+            <p className="text-2xl mb-8">Empowering Youth, Transforming Lives</p>
+            <p className="text-lg max-w-2xl mx-auto mb-12">
+              Sarthi is a youth-led non-governmental organisation that strives to build a society where 
+              empowered and educated youth improve their and others' lives. We believe that awareness is 
+              the first step towards change.
+            </p>
+            <button 
+              onClick={() => navigate("/get-involved")}
+              className="bg-blue-600 text-white font-bold py-3 px-8 m-auto rounded-full transition duration-300 hover:bg-blue-700 flex items-center gap-2"
+            >
+              Get Involved <ArrowRight className="transition-transform duration-500 group-hover:translate-x-1" />
+            </button>
           </div>
         </section>
       </FadeInFromDown>
-      <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
+      {/* <hr className="w-2/3 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr> */}
       <section className="bg-white">
         <Achievements/>
       </section>
