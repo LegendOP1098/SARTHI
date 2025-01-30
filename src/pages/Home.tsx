@@ -24,7 +24,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="relative z-10 px-6">
             <h4 className="text-5xl font-bold mb-4">Welcome to Sarthi</h4>
-            <p className="text-2xl mb-8">Empowering Youth, Transforming Lives</p>
+            <p className="text-2xl mb-8">tagline daalni hai..</p>
             <p className="text-lg max-w-2xl mx-auto mb-12">
               Sarthi is a youth-led non-governmental organisation that strives to build a society where 
               empowered and educated youth improve their and others' lives. We believe that awareness is 
@@ -44,9 +44,9 @@ const Home = () => {
         <Achievements/>
       </section>
 
-      <section className='mt-20'>
+      {/* <section className='mt-20'>
         <MissionComponent/>
-      </section>
+      </section> */}
 
       <section className='my-20'>
         <OurCompass/>

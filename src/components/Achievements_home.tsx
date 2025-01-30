@@ -17,20 +17,20 @@ export const Achievements = () => {
       isrc: "https://i.ibb.co/ctKYqc9/people-New.png",
     },
     {
-      value: 250,
+      value: 450,
       suffix: "+",
       name: "children educated",
       isrc: "https://i.ibb.co/98Vwx86/education-New.png",
     },
     {
-      value: 1500,
+      value: 6800,
       suffix: "+",
       name: "sanitary products distributed",
       isrc: "https://i.ibb.co/YcQJ7XF/sanitary-New.png",
     },
     {
-      value: 2,
-      suffix: "+",
+      value: 4,
+      suffix: "",
       name: "Sushiksha schools",
       isrc: "https://i.ibb.co/x11TFDW/school-New.png",
     },
@@ -45,7 +45,7 @@ export const Achievements = () => {
     <div ref={ref} className="my-6 mx-4 h-[340px]">
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold text-center my-10 text-blue-800">
-          Achievements
+          Impact so Far
         </h1>
       </div>
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">

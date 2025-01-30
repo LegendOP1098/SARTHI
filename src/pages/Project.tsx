@@ -2,7 +2,7 @@ import Carousel from "../components/mini/Carousel"
 
 interface ProjectPageProps {
   title: string;
-  info: string;
+  info: string[];
 }
 
 export const ProjectPage: React.FC<ProjectPageProps> = ({title,info}) => {
@@ -17,9 +17,11 @@ export const ProjectPage: React.FC<ProjectPageProps> = ({title,info}) => {
             <Carousel/>
           </div>
         </div>
-        <div className="w-1/2 text-xl">
-          {info}
-        </div>
+        {info.map((item, index) => (
+          <div key={index} className="w-1/2 text-xl">
+            {item}
+          </div>
+        ))}
       </div>
     </div>
   )
